@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgba(255, 144, 14, 0.10);
+    
+}
+.banner{
+    max-width: 1280px;
+    margin: 0 auto;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+ul > li{
+    list-style: none;
+}
+nav ul{
+    display: flex;
+}
+ul li a{
+   padding-left: 2rem;
+   text-decoration: none;
+   color: black;
+}
+.section-banner{
+  text-align: center;
+}
+.banner-title{
+    font-size: 3rem;
+}
+.describe{
+    color: gray;
+}
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.banner img{
+    width: 100%;
+}
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+
+.team-container{
+    display: flex;
+}
+
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.team-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+@media screen and (max-width:576px){
+   nav{
+        flex-direction: column;
+    }
+    .section-banner{
+        width: 100%;
+    }
+   
+    ul li a{
+    padding-left: 1rem;
+   }
+
+    nav ul li{
+    padding-top: 1rem;
+    }
+
+.team-container{
+
+}
+
+}
