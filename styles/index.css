@@ -87,6 +87,7 @@ main {
     display: flex;
     margin-top: 3rem;
     justify-content: space-around;
+    border: 2px solid green;
 }
 
 .feature-text-container {
@@ -120,6 +121,29 @@ main {
     background: #FF900E;
     color: white;
 }
+.some{
+    border: 1px solid red;
+    margin-top: 3rem;
+    width: 30%;
+}
+.some-icon{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid blue;
+    margin-top: 3rem;
+}
+.some-box{
+    border: 1px solid aqua;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -167,5 +191,12 @@ main {
     }
     .feature-image img {
         width: 100%;
+    }
+    .some{
+        width: 100%;
+    }
+    .some-icon{
+        flex-wrap: wrap;
+        gap: 2rem;
     }
 }
