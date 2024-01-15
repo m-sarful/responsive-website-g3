@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 header {
     background-color: rgba(255, 144, 14, 0.10);
 
@@ -61,10 +64,10 @@ ul li a {
     width: 100%;
 }
 
-main {
+/* main {
     max-width: 1200px;
     margin: 0 auto;
-}
+} */
 
 .team-container {
     display: flex;
@@ -87,7 +90,6 @@ main {
     display: flex;
     margin-top: 3rem;
     justify-content: space-around;
-    border: 2px solid green;
 }
 
 .feature-text-container {
@@ -114,7 +116,7 @@ main {
 .experience {
     padding: 2rem;
     width: 12rem;
-    position: absolute;
+    position: relative;
     right: 25rem;
     top: 36rem;
     border-radius: 8px;
@@ -122,23 +124,38 @@ main {
     color: white;
 }
 .some{
-    border: 1px solid red;
     margin-top: 3rem;
     width: 30%;
 }
 .some-icon{
     display: flex;
     justify-content: space-evenly;
-    border: 1px solid blue;
     margin-top: 3rem;
 }
 .some-box{
-    border: 1px solid aqua;
     text-align: center;
 }
-
-
-
+.sponsor{
+    margin-top: 3rem;
+    
+}
+.sponsor-text{
+ text-align: center;
+}
+.sponsor-company{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.sponsor-company img{
+    width: 100px;
+}
+footer{
+/* background: #FFF4E7; */
+background-color: red;
+    text-align: center;
+    margin-top: 3rem;
+}
 
 
 
@@ -195,8 +212,9 @@ main {
     .some{
         width: 100%;
     }
-    .some-icon{
+    .some-icon, .sponsor-company{
         flex-wrap: wrap;
         gap: 2rem;
     }
+   
 }
