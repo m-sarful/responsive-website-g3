@@ -52,11 +52,13 @@ ul li a{
 main{
     max-width: 1200px;
     margin: 0 auto;
-    background-color: aquamarine;
 }
 
 .team-container{
     display: flex;
+    margin-top: 3rem;
+    align-items: center;
+
 }
 
 .team-img{
@@ -66,11 +68,15 @@ main{
 }
 
 .team-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 2rem;
+    padding-left: 3rem;
 }
+
+
+
+
+
+
+
 
 @media screen and (max-width:576px){
    nav{
@@ -89,7 +95,16 @@ main{
     }
 
 .team-container{
-
+    flex-direction: column-reverse;
 }
-
+    .team-img{
+        grid-template-columns: 1fr;
+    }
+    .team-img img{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .team-content{
+        padding-left: 0;
+    }
 }
